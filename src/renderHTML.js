@@ -1,4 +1,4 @@
-import refs from './refs';
+import { refs } from './refs';
 
 function renderContriesList(countries) {
   const markup = countries
