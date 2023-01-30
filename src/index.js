@@ -1,6 +1,6 @@
 import './css/styles.css';
 import { refs } from './refs';
-import { fetchCountries } from './fetchCountries';
+import { fetchCountries, fetchCountriesAsyc } from './fetchCountries';
 import { renderContriesList, renderCountriesCard } from './renderHTML';
 import { information, failure } from './notification';
 

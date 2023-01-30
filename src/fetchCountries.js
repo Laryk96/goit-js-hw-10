@@ -12,4 +12,14 @@ function fetchCountries(name) {
   });
 }
 
-export { fetchCountries };
+async function fetchCountriesAsyc(name) {
+  const url = `${baseUrl}/v3.1/name/${name}?${filter}`;
+
+  const response = await fetch(url);
+  return await response.json();
+
+  // в одну строку
+  //  return (await fetch(url)).json();
+}
+
+export { fetchCountries, fetchCountriesAsyc };
